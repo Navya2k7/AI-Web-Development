@@ -12,24 +12,30 @@
     --muted: #a1a9bf;
     --purple: #a78bfa;
     --purple-dark: #8b5cf6;
+    --accent: #a78bfa;
+    --accent-strong: #c4b5fd;
     --border: rgba(255, 255, 255, 0.10);
-    --glow: rgba(139, 92, 246, 0.20);
+    --glow: rgba(139, 92, 246, 0.22);
     --header-bg: rgba(8, 11, 22, 0.88);
     --shadow: rgba(0, 0, 0, 0.20);
 }
 
+:root[data-theme="light"],
+[data-theme="light"],
 body.light-theme {
     color-scheme: light;
-    --background: #f7f6fc;
+    --background: #f8f7fd;
     --surface: #ffffff;
-    --surface-light: #eeeafd;
-    --text: #201a33;
-    --muted: #69647b;
+    --surface-light: #f1edfd;
+    --text: #1d182e;
+    --muted: #6a667d;
     --purple: #7045cf;
     --purple-dark: #5b35b6;
-    --border: rgba(40, 25, 70, 0.13);
-    --glow: rgba(139, 92, 246, 0.12);
-    --header-bg: rgba(247, 246, 252, 0.90);
+    --accent: #7045cf;
+    --accent-strong: #5b35b6;
+    --border: rgba(40, 25, 70, 0.12);
+    --glow: rgba(112, 69, 207, 0.16);
+    --header-bg: rgba(248, 247, 253, 0.90);
     --shadow: rgba(40, 25, 70, 0.08);
 }
 
@@ -45,12 +51,12 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--background);
     color: var(--text);
     line-height: 1.7;
     overflow-x: hidden;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 body,
@@ -136,8 +142,13 @@ a:focus-visible {
 }
 
 .nav-links a:hover,
-.nav-links a:focus-visible {
+.nav-links a:focus-visible,
+.nav-links a.active {
     color: var(--purple);
+}
+
+.nav-links a.active {
+    font-weight: 700;
 }
 
 .menu-toggle,
@@ -312,6 +323,24 @@ a:focus-visible {
     border-color: var(--purple);
 }
 
+.btn-outline {
+    background: transparent;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+}
+
+.btn-outline:hover {
+    background: var(--purple);
+    color: #130d25;
+    box-shadow: 0 4px 18px var(--glow);
+}
+
+:root[data-theme="light"] .btn-outline:hover,
+[data-theme="light"] .btn-outline:hover,
+body.light-theme .btn-outline:hover {
+    color: #ffffff;
+}
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -387,11 +416,17 @@ a:focus-visible {
 .profile-photo {
     width: 220px;
     height: 220px;
-    margin: 20px auto;
+    margin: 24px auto;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid var(--accent);
-    box-shadow: 0 0 20px rgba(100, 100, 255, 0.25);
+    border: 4px solid var(--purple);
+    box-shadow: 0 0 25px var(--glow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px var(--glow);
 }
 
 .profile-photo img {
@@ -758,6 +793,22 @@ a:focus-visible {
 .project-card h3 {
     font-size: 23px;
     letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #34d399;
+    background: rgba(52, 211, 153, 0.12);
+    border: 1px solid rgba(52, 211, 153, 0.25);
+    padding: 2px 9px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
 }
 
 .project-description {
@@ -1224,11 +1275,13 @@ a:focus-visible {
   max-width: 900px;
   height: min(85vh, 800px);
   margin: auto;
-  padding: 20px;
-  color: var(--text, #f5f3ff);
-  background: var(--surface, #151322);
-  border: 1px solid var(--border, rgba(196, 181, 253, 0.16));
-  border-radius: 16px;
+  padding: 24px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 20px 60px var(--shadow);
+  outline: none;
 }
 
 .certificate-dialog::backdrop {
