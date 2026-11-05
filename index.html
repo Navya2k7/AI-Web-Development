@@ -1,19 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#080b16">
-    <meta name="description"
-          content="Navya Raghav's student developer portfolio featuring projects, technical skills and education.">
+    <meta name="description" content="Navya Raghav — AI Web Developer & B.Tech CSE (IoT) Student at Dronacharya College of Engineering. Personal Profile Website built for InAmigos Foundation Internship Task 1.">
+    <meta name="author" content="Navya Raghav">
+    <meta name="keywords" content="Navya Raghav, AI Web Development, Portfolio, InAmigos Foundation, CSE IoT, Web Developer, Dronacharya College of Engineering">
 
-    <title>Navya Raghav | Student Developer</title>
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Navya Raghav | AI Web Developer Portfolio">
+    <meta property="og:description" content="Explore Navya Raghav's projects, technical skills in AI & Web Development, research presentations, and academic journey for InAmigos Foundation Internship Task 1.">
+    <meta property="og:image" content="images/navya.jpeg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Navya Raghav | AI Web Developer Portfolio">
+    <meta name="twitter:description" content="Explore Navya Raghav's projects, technical skills in AI & Web Development, research presentations, and academic journey.">
+    <meta name="twitter:image" content="images/navya.jpeg">
+
+    <title>Navya Raghav | AI Web Developer & CSE Student</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js"></script>
 </head>
 
 <body>
@@ -34,6 +47,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#ai-assistant">AI Assistant</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#education">Education</a></li>
@@ -50,28 +64,30 @@
 
     <main>
 
-        <!-- Hero -->
+        <!-- Hero Section -->
         <section class="hero" id="home">
             <div class="hero-glow"></div>
 
             <div class="hero-content">
                 <div class="availability">
                     <span class="status-dot"></span>
-                    COMPUTER SCIENCE STUDENT
+                    INAMIGOS FOUNDATION · AI WEB DEV INTERNSHIP
                 </div>
 
                 <p class="intro-tag">HELLO, WORLD! I'M</p>
 
                 <h1>Navya <span>Raghav.</span></h1>
+                
                 <div class="profile-photo">
-                    <img src="images/navya.jpeg" alt="Navya's profile photo">
+                    <img src="images/navya.jpeg" alt="Navya Raghav - Profile Photo" loading="eager">
                 </div>
-                <h2>Student Developer & Tech Enthusiast</h2>
+
+                <h2>AI Web Developer &amp; CSE (IoT) Student</h2>
 
                 <p class="hero-description">
-                    I'm a CSE (IoT) student passionate about technology,
-                    problem-solving and building projects that solve
-                    real-world problems. I'm always learning something new.
+                    Combining modern Web Development with Artificial Intelligence to build intuitive,
+                    responsive, and high-performance digital experiences. Driven by curiosity,
+                    hands-on problem solving, and learning by building.
                 </p>
 
                 <div class="hero-buttons">
@@ -79,19 +95,33 @@
                         Explore My Work <span>↗</span>
                     </a>
 
-                    <a href="resume.pdf" class="btn secondary-btn" download>
+                    <a href="resume.pdf" class="btn secondary-btn" download="Navya_Raghav_Resume.pdf">
                         Download Resume ↓
+                    </a>
+
+                    <a href="#ai-assistant" class="btn ai-btn">
+                        ⚡ Ask AI About Me
                     </a>
                 </div>
 
                 <div class="social-links">
                     <a href="https://github.com/Navya2k7" target="_blank"
-                       rel="noopener noreferrer">GitHub ↗</a>
+                       rel="noopener noreferrer" title="GitHub Profile">
+                       GitHub ↗
+                    </a>
 
                     <a href="https://www.linkedin.com/in/navya-raghav-691832377" target="_blank"
-                       rel="noopener noreferrer">LinkedIn ↗</a>
+                       rel="noopener noreferrer" title="LinkedIn Profile">
+                       LinkedIn ↗
+                    </a>
 
-                    <a href="#contact">Contact ↗</a>
+                    <a href="mailto:raghavnavya24@gmail.com" title="Direct Email">
+                       Email Me ↗
+                    </a>
+
+                    <a href="#contact" title="Jump to Contact Form">
+                       Quick Contact ↓
+                    </a>
                 </div>
 
                 <div class="hero-stats">
@@ -101,27 +131,35 @@
                     </div>
 
                     <div class="stat">
-                        <strong>2029</strong>
-                        <p>Graduation</p>
+                        <strong>2025–29</strong>
+                        <p>B.Tech CSE (IoT)</p>
                     </div>
 
                     <div class="stat">
                         <strong>02</strong>
-                        <p>Featured Projects</p>
+                        <p>Research Papers</p>
+                    </div>
+
+                    <div class="stat">
+                        <strong>Task 01</strong>
+                        <p>AI Web Dev Complete</p>
                     </div>
                 </div>
             </div>
 
-            <a href="#about" class="scroll-indicator">
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
                 SCROLL TO EXPLORE <span>↓</span>
             </a>
         </section>
 
-        <!-- About -->
+        <!-- About Section -->
         <section class="section container" id="about">
             <div class="section-heading reveal">
                 <p class="section-label">A LITTLE ABOUT ME</p>
                 <h2>Curious mind. <span>Creative builder.</span></h2>
+                <p class="section-description">
+                    My background, technical aspirations, and approach to building modern web solutions.
+                </p>
             </div>
 
             <div class="about-grid reveal">
@@ -130,120 +168,248 @@
                     <h3>Who am I?</h3>
 
                     <p>
-                        I'm Navya, a second-year B.Tech student pursuing
-                        Computer Science Engineering with Internet of
-                        Things (IoT) at Dronacharya College of Engineering.
+                        I'm Navya Raghav, a second-year B.Tech undergraduate pursuing
+                        Computer Science Engineering with Internet of Things (IoT) at
+                        Dronacharya College of Engineering, Gurugram.
                     </p>
 
                     <p>
-                        I enjoy exploring software development, learning
-                        programming concepts and turning ideas into
-                        practical projects.
+                        I have a deep curiosity for modern web development, artificial intelligence,
+                        and intelligent systems that solve real-world student and community challenges.
+                        I believe in strong programming fundamentals paired with modern, agile AI workflows.
                     </p>
                 </div>
 
                 <div class="about-card about-highlight">
+                    <div class="about-icon">🚀</div>
                     <p class="section-label">MY CURRENT FOCUS</p>
-                    <h3>Learning by building.</h3>
+                    <h3>Learning &amp; building with AI.</h3>
 
                     <p>
-                        Strengthening my programming fundamentals,
-                        developing frontend skills and exploring
-                        opportunities to collaborate with other students.
+                        Actively mastering AI-assisted web development workflows, prompt engineering,
+                        and responsive component design to turn ideas into sleek, production-ready
+                        web applications rapidly and efficiently.
                     </p>
 
                     <div class="focus-tags">
-                        <span>Web Development</span>
+                        <span>AI Web Development</span>
+                        <span>Prompt Engineering</span>
+                        <span>Frontend Architecture</span>
+                        <span>IoT &amp; Embedded Systems</span>
                         <span>Problem Solving</span>
-                        <span>IoT</span>
-                        <span>Cybersecurity</span>
+                        <span>Cybersecurity Basics</span>
+                    </div>
+                </div>
+
+                <div class="about-card about-academic-card">
+                    <div class="about-icon">🎓</div>
+                    <h3>Academic &amp; Research Highlights</h3>
+
+                    <p>
+                        Consistently excelling academically with an <strong>8.84 / 10 CGPA</strong>,
+                        alongside presenting original research at prestigious academic venues including
+                        <strong>IIT Mandi (Anusandhan 3.0)</strong> and the <strong>ICMSCI 2026 International Conference</strong>.
+                    </p>
+
+                    <div class="highlight-pills">
+                        <span class="highlight-pill">🏫 Dronacharya College of Engg.</span>
+                        <span class="highlight-pill">🏆 Research Presenter @ IIT Mandi</span>
+                        <span class="highlight-pill">📚 DPS Maruti Kunj (90.4% / 85.4%)</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills -->
+        <!-- Skills Section -->
         <section class="section container" id="skills">
             <div class="section-heading reveal">
-                <p class="section-label">MY TOOLKIT</p>
-                <h2>Skills & <span>Technologies</span></h2>
-
+                <p class="section-label">MY TOOLKIT &amp; CAPABILITIES</p>
+                <h2>Skills &amp; <span>Technologies</span></h2>
                 <p class="section-description">
-                    Technologies I'm learning and using in my projects.
+                    Core technical proficiencies across Artificial Intelligence, Web Development, Computer Science, and Engineering Tools.
                 </p>
             </div>
 
-            <div class="skills-grid">
-                <article class="skill-card reveal">
-                    <span class="skill-icon">C++</span>
-                    <h3>C++</h3>
-                    <p>Programming fundamentals</p>
+            <div class="skills-categories-grid">
+
+                <!-- Category 1: AI & Intelligent Web Tools -->
+                <article class="skill-cat-card reveal">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🤖</span>
+                        <div>
+                            <span class="skill-cat-badge">INTERNSHIP CORE</span>
+                            <h3>AI &amp; Intelligent Tools</h3>
+                        </div>
+                    </div>
+                    <p class="skill-cat-desc">
+                        Leveraging modern AI platforms to accelerate prototyping, design, and code generation.
+                    </p>
+                    <ul class="skill-badges-list">
+                        <li><span class="pill-dot"></span> ChatGPT &amp; Claude (Prompt Engineering)</li>
+                        <li><span class="pill-dot"></span> GitHub Copilot &amp; v0.dev (AI UI Generation)</li>
+                        <li><span class="pill-dot"></span> AI Web Builders (Wix AI, WordPress AI)</li>
+                        <li><span class="pill-dot"></span> Generative AI (Midjourney, DALL-E, Canva AI)</li>
+                        <li><span class="pill-dot"></span> Context-Grounding &amp; Workflow Automation</li>
+                    </ul>
                 </article>
 
-                <article class="skill-card reveal">
-                    <span class="skill-icon">⌘</span>
-                    <h3>HTML</h3>
-                    <p>Semantic page structure</p>
+                <!-- Category 2: Frontend & Web Development -->
+                <article class="skill-cat-card reveal">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🌐</span>
+                        <div>
+                            <span class="skill-cat-badge">WEB STACK</span>
+                            <h3>Frontend &amp; Web Engineering</h3>
+                        </div>
+                    </div>
+                    <p class="skill-cat-desc">
+                        Crafting responsive, clean, and accessible web experiences from scratch.
+                    </p>
+                    <ul class="skill-badges-list">
+                        <li><span class="pill-dot"></span> HTML5 (Semantic &amp; SEO-Optimized Structure)</li>
+                        <li><span class="pill-dot"></span> CSS3 (Flexbox, CSS Grid, Custom Properties)</li>
+                        <li><span class="pill-dot"></span> Modern JavaScript (ES6+, DOM, Async/Await)</li>
+                        <li><span class="pill-dot"></span> Responsive Mobile-First Design</li>
+                        <li><span class="pill-dot"></span> RESTful API Integration &amp; Fetch</li>
+                    </ul>
                 </article>
 
-                <article class="skill-card reveal">
-                    <span class="skill-icon">✳</span>
-                    <h3>CSS</h3>
-                    <p>Responsive web design</p>
+                <!-- Category 3: Core CS & Programming -->
+                <article class="skill-cat-card reveal">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">💻</span>
+                        <div>
+                            <span class="skill-cat-badge">ENGINEERING</span>
+                            <h3>Core CS &amp; Programming</h3>
+                        </div>
+                    </div>
+                    <p class="skill-cat-desc">
+                        Strong computer science fundamentals, data structures, and algorithmic logic.
+                    </p>
+                    <ul class="skill-badges-list">
+                        <li><span class="pill-dot"></span> C++ (OOPs, Data Structures, Algorithms)</li>
+                        <li><span class="pill-dot"></span> Python Fundamentals (Scripting &amp; Automation)</li>
+                        <li><span class="pill-dot"></span> Internet of Things (IoT) Fundamentals</li>
+                        <li><span class="pill-dot"></span> Problem Solving &amp; Algorithmic Thinking</li>
+                        <li><span class="pill-dot"></span> Cybersecurity &amp; Web Security Basics</li>
+                    </ul>
                 </article>
 
-                <article class="skill-card reveal">
-                    <span class="skill-icon">JS</span>
-                    <h3>JavaScript</h3>
-                    <p>Interactive web pages</p>
+                <!-- Category 4: Tools, Databases & Deployment -->
+                <article class="skill-cat-card reveal">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🛠️</span>
+                        <div>
+                            <span class="skill-cat-badge">WORKFLOW</span>
+                            <h3>Databases &amp; Dev Tools</h3>
+                        </div>
+                    </div>
+                    <p class="skill-cat-desc">
+                        Modern version control, database fundamentals, and cloud deployment pipelines.
+                    </p>
+                    <ul class="skill-badges-list">
+                        <li><span class="pill-dot"></span> Git &amp; GitHub (Version Control &amp; PRs)</li>
+                        <li><span class="pill-dot"></span> SQL (Relational DB Queries &amp; Schemas)</li>
+                        <li><span class="pill-dot"></span> MongoDB (Document Database Basics)</li>
+                        <li><span class="pill-dot"></span> Vite &amp; Modern Build Systems</li>
+                        <li><span class="pill-dot"></span> Vercel &amp; Cloud Deployment</li>
+                    </ul>
                 </article>
 
-                <article class="skill-card reveal">
-                    <span class="skill-icon">DB</span>
-                    <h3>SQL</h3>
-                    <p>Database fundamentals</p>
-                </article>
-
-                <article class="skill-card reveal">
-                    <span class="skill-icon">M</span>
-                    <h3>MongoDB</h3>
-                    <p>Database basics</p>
-                </article>
-
-                <article class="skill-card reveal">
-                    <span class="skill-icon">GH</span>
-                    <h3>Git & GitHub</h3>
-                    <p>Version control</p>
-                </article>
-
-                <article class="skill-card reveal">
-                    <span class="skill-icon">API</span>
-                    <h3>API Integration</h3>
-                    <p>Connecting web services</p>
-                </article>
             </div>
 
-            <p class="skills-note">
-                Also exploring Docker and modern development tools.
-            </p>
+            <div class="skills-banner reveal">
+                <span class="banner-icon">💡</span>
+                <p>
+                    <strong>AI Web Development Philosophy:</strong> Utilizing AI tools to eliminate repetitive boilerplates,
+                    speed up prototyping, and focus intellectual effort on architecture, user experience, and robust code.
+                </p>
+            </div>
         </section>
 
-        <!-- Projects -->
+        <!-- AI Interactive Spotlight Section -->
+        <section class="section container" id="ai-assistant">
+            <div class="section-heading reveal">
+                <p class="section-label">AI IN ACTION · TASK 1 SPECIAL</p>
+                <h2>Interactive AI <span>Profile Assistant</span></h2>
+                <p class="section-description">
+                    Experience AI Web Development firsthand. Click a question chip or ask anything below to learn about my qualifications and readiness for InAmigos Foundation.
+                </p>
+            </div>
+
+            <div class="ai-assistant-card reveal">
+                <div class="ai-assistant-header">
+                    <div class="ai-bot-identity">
+                        <div class="ai-avatar">🤖</div>
+                        <div>
+                            <div class="ai-name-row">
+                                <strong>Navya's AI Assistant</strong>
+                                <span class="ai-beacon"><span class="beacon-dot"></span> ONLINE</span>
+                            </div>
+                            <span class="ai-tagline">AI Web Dev Interactive Agent</span>
+                        </div>
+                    </div>
+                    <button type="button" class="ai-clear-btn" id="aiResetBtn" title="Reset conversation">
+                        Reset ↺
+                    </button>
+                </div>
+
+                <!-- Preset Prompt Chips -->
+                <div class="ai-chips-container">
+                    <span class="ai-chips-label">Quick Prompts:</span>
+                    <div class="ai-chips-scroll">
+                        <button type="button" class="ai-chip" data-query="skills">⚡ Skills &amp; AI Stack</button>
+                        <button type="button" class="ai-chip" data-query="inamigos">🎯 Why InAmigos Foundation?</button>
+                        <button type="button" class="ai-chip" data-query="education">🎓 Education &amp; 8.84 CGPA</button>
+                        <button type="button" class="ai-chip" data-query="research">🏆 Research &amp; IIT Mandi</button>
+                        <button type="button" class="ai-chip" data-query="contact">📬 Contact &amp; Resume</button>
+                    </div>
+                </div>
+
+                <!-- Chat Dialogue Window -->
+                <div class="ai-chat-window" id="aiChatWindow" aria-live="polite">
+                    <div class="ai-message ai-bot">
+                        <div class="ai-bubble">
+                            <p>
+                                👋 <strong>Hello and welcome!</strong> I am Navya's AI Profile Assistant.
+                                Feel free to click any of the quick prompts above, or ask me directly about
+                                her AI Web Development skills, projects, research papers, or internship goals!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Input Bar -->
+                <form class="ai-input-bar" id="aiForm">
+                    <input type="text"
+                           id="aiInput"
+                           class="ai-text-input"
+                           placeholder="Ask anything (e.g., 'What are her projects?' or 'Tell me about her CGPA')..."
+                           autocomplete="off"
+                           aria-label="Ask the AI Assistant">
+                    <button type="submit" class="ai-send-btn" id="aiSendBtn" aria-label="Send query">
+                        <span>Ask</span> ↗
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
         <section class="section container" id="projects">
             <div class="section-heading reveal">
                 <p class="section-label">THINGS I'VE BUILT</p>
                 <h2>Featured <span>Projects</span></h2>
-
                 <p class="section-description">
-                    Ideas, experiments and projects from my learning journey.
+                    Hands-on applications demonstrating web engineering, artificial intelligence concepts, and hardware integration.
                 </p>
             </div>
 
             <div class="projects-grid">
 
+                <!-- Project 1: NoticeGuard -->
                 <article class="project-card reveal">
                     <div class="project-top">
-                        <span class="project-number">01 / PROJECT</span>
+                        <span class="project-number">01 / FEATURED</span>
                         <span class="project-symbol">✧</span>
                     </div>
 
@@ -252,13 +418,11 @@
                             <div class="window-dots">
                                 <span></span><span></span><span></span>
                             </div>
-
                             <div class="notice-mark">✓</div>
                             <div class="fake-line long"></div>
                             <div class="fake-line medium"></div>
-
                             <div class="verification-pill">
-                                Notice verification
+                                AI Verification Active
                             </div>
                         </div>
                     </div>
@@ -266,28 +430,30 @@
                     <h3>NoticeGuard <span class="project-badge">In Progress</span></h3>
 
                     <p class="project-description">
-                        An AI-powered student notice and opportunity
-                        verification system that checks college notices,
-                        scholarships and internship offers against
-                        official sources.
+                        An AI-assisted student notice and opportunity verification system that checks university circulars,
+                        scholarships, and internship listings against verified official channels to protect students from fraud.
                     </p>
 
                     <div class="project-tags">
                         <span>JavaScript</span>
+                        <span>AI Verification</span>
                         <span>API Integration</span>
-                        <span>Verification</span>
+                        <span>Web Security</span>
                     </div>
 
-                    <a href="https://github.com/Navya2k7" target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-link">
-                        View project <span>↗</span>
-                    </a>
+                    <div class="project-links-row">
+                        <a href="https://github.com/Navya2k7" target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            View on GitHub <span>↗</span>
+                        </a>
+                    </div>
                 </article>
 
+                <!-- Project 2: AI Personal Profile Website -->
                 <article class="project-card reveal">
                     <div class="project-top">
-                        <span class="project-number">02 / PROJECT</span>
+                        <span class="project-number">02 / TASK 1</span>
                         <span class="project-symbol">✳</span>
                     </div>
 
@@ -295,55 +461,99 @@
                         <div class="portfolio-window">
                             <div class="portfolio-preview-nav">
                                 <span>n.</span>
-                                <span>ABOUT &nbsp; WORK</span>
+                                <span>AI DEV · WEB PROFILE</span>
                             </div>
-
                             <div class="preview-heading">
-                                <div class="preview-small">HELLO, I'M</div>
+                                <div class="preview-small">AI WEB DEV INTERNSHIP</div>
                                 <div class="preview-name">Navya.</div>
                                 <div class="preview-bar"></div>
                             </div>
-
                             <div class="preview-cards">
                                 <span></span><span></span><span></span>
                             </div>
                         </div>
                     </div>
 
-                    <h3>Personal Portfolio</h3>
+                    <h3>AI-Powered Personal Profile <span class="project-badge task-badge">Task 1</span></h3>
 
                     <p class="project-description">
-                        A responsive personal website showcasing my
-                        education, technical skills, projects and
-                        development journey.
+                        A modern, accessible, and responsive personal profile engineered with AI-assisted web development workflows.
+                        Features dark/light themes, an interactive AI profile assistant, accessible PDF dialogs, and clean responsive CSS.
                     </p>
 
                     <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                        <span>AI Web Development</span>
+                        <span>HTML5 / CSS3</span>
+                        <span>JavaScript ES6+</span>
+                        <span>Vite</span>
+                        <span>Responsive UI</span>
                     </div>
 
-                    <a href="#home" class="project-link">
-                        Explore this website <span>↗</span>
-                    </a>
+                    <div class="project-links-row">
+                        <a href="#home" class="project-link">
+                            Explore Live Site <span>↗</span>
+                        </a>
+                        <a href="https://github.com/Navya2k7" target="_blank" rel="noopener noreferrer" class="project-link secondary-link">
+                            Source Code <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3: IoT Telemetry Web Dashboard -->
+                <article class="project-card reveal">
+                    <div class="project-top">
+                        <span class="project-number">03 / IOT &amp; WEB</span>
+                        <span class="project-symbol">⚡</span>
+                    </div>
+
+                    <div class="project-visual iot-visual">
+                        <div class="iot-window">
+                            <div class="iot-pulse-header">
+                                <span class="iot-node-dot"></span>
+                                <span class="iot-title">TELEMETRY STREAM</span>
+                            </div>
+                            <div class="iot-chart-lines">
+                                <div class="chart-bar b1"></div>
+                                <div class="chart-bar b2"></div>
+                                <div class="chart-bar b3"></div>
+                                <div class="chart-bar b4"></div>
+                                <div class="chart-bar b5"></div>
+                            </div>
+                            <div class="iot-status-chip">Sensors Connected · 24ms</div>
+                        </div>
+                    </div>
+
+                    <h3>IoT Telemetry Web Visualizer <span class="project-badge">Prototype</span></h3>
+
+                    <p class="project-description">
+                        A web interface prototype designed to ingest and display real-time sensor telemetry from microcontrollers,
+                        uniting hardware sensing with accessible browser-based monitoring.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>IoT</span>
+                        <span>C++</span>
+                        <span>Web Interface</span>
+                        <span>Data Visualization</span>
+                    </div>
+
+                    <div class="project-links-row">
+                        <a href="#about" class="project-link">
+                            Learn More <span>↗</span>
+                        </a>
+                    </div>
                 </article>
 
             </div>
-
-            <p class="projects-note">
-                Project links can be updated with your actual GitHub
-                repositories when they're ready.
-            </p>
         </section>
 
-        <!-- Certifications and Research -->
+        <!-- Certifications and Research Section -->
         <section class="section container" id="certifications">
             <div class="section-heading reveal">
-                <p class="section-label">RESEARCH & ACHIEVEMENTS</p>
-                <h2>Certifications & <span>Conferences</span></h2>
+                <p class="section-label">RESEARCH &amp; ACHIEVEMENTS</p>
+                <h2>Certifications &amp; <span>Conferences</span></h2>
                 <p class="section-description">
-                    Academic research and conference experiences.
+                    Academic research presentations and international conference experiences.
                 </p>
             </div>
 
@@ -355,9 +565,8 @@
                     <h3>Anusandhan 3.0</h3>
                     <p class="certificate-issuer">IIT Mandi</p>
                     <p class="certificate-description">
-                        Presented a research paper at Anusandhan 3.0,
-                        gaining experience in academic research and
-                        technical presentation.
+                        Presented an academic research paper at IIT Mandi's Anusandhan 3.0, gaining rich experience
+                        in technical methodology, academic writing, and defense before peer scholars.
                     </p>
                     <button type="button"
                         class="btn btn-outline certificate-btn"
@@ -368,14 +577,12 @@
 
                 <article class="certificate-card reveal">
                     <div class="certificate-icon">🎓</div>
-                    <span class="certificate-type">Conference</span>
+                    <span class="certificate-type">International Conference</span>
                     <h3>ICMSCI 2026</h3>
-                    <p class="certificate-issuer">
-                        International Conference
-                    </p>
+                    <p class="certificate-issuer">International Conference</p>
                     <p class="certificate-description">
-                        Academic conference participation connected
-                        with computing and mathematical sciences.
+                        Academic conference participation connected with computing, intelligence, and mathematical sciences,
+                        exploring cutting-edge technological innovations.
                     </p>
                     <button type="button"
                         class="btn btn-outline certificate-btn"
@@ -387,29 +594,29 @@
             </div>
         </section>
 
-    <!-- Certificate preview -->
-    <dialog id="certificate-dialog" class="certificate-dialog">
-      <div class="dialog-header">
-        <h3>Certificate Preview</h3>
-        <button type="button" id="close-certificate"
-          class="close-dialog" aria-label="Close preview">×</button>
-      </div>
-      <iframe id="certificate-frame"
-        title="Certificate preview" src="about:blank"></iframe>
-      <p class="dialog-help">
-        Certificate not displaying?
-        <a id="certificate-open-link" href="#"
-          target="_blank" rel="noopener noreferrer">
-          Open it in a new tab
-        </a>
-      </p>
-    </dialog>
+        <!-- Certificate Preview Dialog Modal -->
+        <dialog id="certificate-dialog" class="certificate-dialog">
+            <div class="dialog-header">
+                <h3>Certificate Preview</h3>
+                <button type="button" id="close-certificate" class="close-dialog" aria-label="Close preview">×</button>
+            </div>
+            <iframe id="certificate-frame" title="Certificate preview" src="about:blank"></iframe>
+            <p class="dialog-help">
+                Certificate not displaying directly?
+                <a id="certificate-open-link" href="#" target="_blank" rel="noopener noreferrer">
+                    Open in a new tab ↗
+                </a>
+            </p>
+        </dialog>
 
-        <!-- Education -->
+        <!-- Education Section -->
         <section class="section container" id="education">
             <div class="section-heading reveal">
                 <p class="section-label">MY JOURNEY SO FAR</p>
-                <h2>Education & <span>Learning</span></h2>
+                <h2>Education &amp; <span>Learning</span></h2>
+                <p class="section-description">
+                    Academic foundations, key coursework, and educational milestones.
+                </p>
             </div>
 
             <div class="timeline">
@@ -417,21 +624,20 @@
                     <div class="timeline-dot"></div>
 
                     <div class="timeline-card">
-                        <span class="timeline-date">2025 – 2029</span>
-                        <h3>B.Tech — CSE (IoT)</h3>
+                        <span class="timeline-date">2025 – 2029 (Ongoing)</span>
+                        <h3>B.Tech — CSE (Internet of Things)</h3>
 
                         <p class="timeline-place">
-                            Dronacharya College of Engineering
+                            <strong>Dronacharya College of Engineering, Gurugram</strong>
                         </p>
 
                         <p>
-                            Second-year undergraduate student exploring
-                            computer science, programming and the
-                            Internet of Things.
+                            Second-year undergraduate engineering student focused on computer science,
+                            software development, data structures, AI tools, and connected IoT systems.
                         </p>
 
                         <span class="education-badge">
-                            Overall CGPA: 8.84 / 10
+                            🌟 Overall CGPA: 8.84 / 10
                         </span>
                     </div>
                 </article>
@@ -443,16 +649,24 @@
                         <span class="timeline-date">School Education</span>
                         <h3>Delhi Public School, Maruti Kunj</h3>
 
-                        <p>
-                            Class 12: 85.4%<br>
-                            Class 10: 90.4%
+                        <p class="timeline-place">
+                            Central Board of Secondary Education (CBSE)
                         </p>
+
+                        <p>
+                            Built a strong mathematical, scientific, and analytical foundation through high-schooling:
+                        </p>
+
+                        <div class="school-scores">
+                            <span class="score-pill">Class 12 (Senior Secondary): <strong>85.4%</strong></span>
+                            <span class="score-pill">Class 10 (Secondary): <strong>90.4%</strong></span>
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
 
-        <!-- Contact -->
+        <!-- Contact Section -->
         <section class="section container" id="contact">
             <div class="contact-card reveal">
                 <p class="section-label">LET'S CONNECT</p>
@@ -460,28 +674,97 @@
                 <h2>Have an idea? <span>Let's talk.</span></h2>
 
                 <p>
-                    I'm interested in learning, collaborating on projects
-                    and exploring student opportunities in technology.
+                    I am excited to start my journey with <strong>InAmigos Foundation</strong> in the
+                    <strong>AI Web Development</strong> internship. Feel free to reach out directly
+                    via email, LinkedIn, or the quick message form below!
                 </p>
 
-                <div class="contact-buttons">
-                    <a href="mailto:raghavnavya24@gmail.com"
-                       class="btn primary-btn">
-                        Email Me ↗
-                    </a>
+                <div class="contact-wrapper">
+                    <!-- Left: Contact Details & Quick Links -->
+                    <div class="contact-details-box">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">✉️</div>
+                            <div class="contact-item-info">
+                                <span class="contact-item-label">Email Address</span>
+                                <a href="mailto:raghavnavya24@gmail.com" class="contact-item-value">
+                                    raghavnavya24@gmail.com
+                                </a>
+                            </div>
+                            <button type="button" class="copy-email-btn" id="copyEmailBtn" title="Copy email address">
+                                Copy 📋
+                            </button>
+                        </div>
 
-                    <a href="https://github.com/Navya2k7" target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn secondary-btn">
-                        GitHub ↗
-                    </a>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">💼</div>
+                            <div class="contact-item-info">
+                                <span class="contact-item-label">LinkedIn Profile</span>
+                                <a href="https://www.linkedin.com/in/navya-raghav-691832377" target="_blank" rel="noopener noreferrer" class="contact-item-value">
+                                    navya-raghav-691832377 ↗
+                                </a>
+                            </div>
+                        </div>
 
-                    <a href="https://www.linkedin.com/in/navya-raghav-691832377" target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn secondary-btn">
-                        LinkedIn ↗
-                    </a>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🐙</div>
+                            <div class="contact-item-info">
+                                <span class="contact-item-label">GitHub Repository</span>
+                                <a href="https://github.com/Navya2k7" target="_blank" rel="noopener noreferrer" class="contact-item-value">
+                                    github.com/Navya2k7 ↗
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div class="contact-item-info">
+                                <span class="contact-item-label">Location &amp; College</span>
+                                <span class="contact-item-value text-muted">
+                                    Delhi NCR / Gurugram · Dronacharya College of Engg.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Quick Interactive Message Form -->
+                    <div class="contact-form-box">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactName">Your Name</label>
+                                    <input type="text" id="contactName" required placeholder="John Doe">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactEmail">Your Email</label>
+                                    <input type="email" id="contactEmail" required placeholder="john@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject">Subject</label>
+                                <select id="contactSubject">
+                                    <option value="InAmigos Foundation Internship Review">InAmigos Foundation Internship Review</option>
+                                    <option value="Project Collaboration">Project Collaboration</option>
+                                    <option value="General Tech Discussion">General Tech Discussion</option>
+                                    <option value="Other Opportunity">Other Opportunity</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage">Message</label>
+                                <textarea id="contactMessage" rows="4" required placeholder="Hi Navya, I reviewed your Task 1 portfolio..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn primary-btn submit-btn" id="submitContactBtn">
+                                Send Message <span>✈</span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
+
+                <!-- Toast Notification Container -->
+                <div id="toastNotification" class="toast-notification" role="status" aria-live="polite"></div>
             </div>
         </section>
 
@@ -490,8 +773,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-            <a href="#home" class="logo">navya<span>.</span></a>
-            <p>Designed & built by Navya Raghav · <span id="year">2026</span></p>
+            <div class="footer-left">
+                <a href="#home" class="logo">navya<span>.</span></a>
+                <p>
+                    Designed &amp; built by <strong>Navya Raghav</strong> · Task 1: Personal Profile Website (AI Based)<br>
+                    Prepared for <strong>InAmigos Foundation</strong> · AI Web Development Internship · <span id="year">2026</span>
+                </p>
+            </div>
             <a href="#home" class="back-to-top">Back to top ↑</a>
         </div>
     </footer>

@@ -4,8 +4,9 @@
   "private": true,
   "description": "Navya Raghav - Student Developer Portfolio",
   "scripts": {
-    "dev": "vite --open",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "vite --open"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
   }
 }
